@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label {
+            font-size: 1rem;
+            margin-left: 10px;
+            color: #000;
+        }
+        input,
+        select {
+            width: 90%;
+            margin: 10px;
+            height: 25px;
+            font-size: 1.2rem;
+            margin-top: 1px;
+            padding: 3px;
+        }
+        select {
+            height: 34px;
+            width: 92%;
+        }
+        input[type=checkbox] {
+            width: 16px;
+            height: 16px;
+            margin: 0px;
+            padding: 0px;
+            margin-left: 10px;
+
+        }
+        .bold-text{
+            margin: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: #e7a503;
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.5rem;
+        }
+        .btn:active {
+            background-color: #98710b;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>
+                <font face="Arial" size="6">Admission Form</font>
+            </legend>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="course">Course Applied for </label>
+                        <select name="course" id="course">
+                            <option value="null">Choose Course</option>
+                            <option value="bca">Bca</option>
+                            <option value="b.tech">B.Tech</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label for="fname">First Name</label>
+                        <input type="text" placeholder="First Name" id="fname">
+                    </td>
+
+                    <td>
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="" id="" placeholder="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="faname">Father Name</label>
+                        <input type="text" id="faname" placeholder="Father Name">
+                    </td>
+
+                    <td>
+                        <label for="maname">Mother Name</label>
+                        <input type="text" placeholder="Mother Name" id="maname">
+                    </td>
+
+                    <td>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="" id="dob" placeholder="Date of Birth">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cat">Category</label>
+                        <select name="cat" id="cat">
+                            <option value="null">Choose Category</option>
+                            <option value="general">General</option>
+                            <option value="sc-cast">Sheduled Castes</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="null">Choose Gender</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="t">Transgender</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="nati">Nationality</label>
+                        <select name="nati" id="nati">
+                            <option value="null">Choose Nationality</option>
+                            <option value="ind">India</option>
+                            <option value="oth">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><span class="bold-text">Previos Education</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mat">Matriculation</label>
+                        <input type="text" name="mat" id="mat" class="read" readonly value="10th">
+                    </td>
+                    <td>
+                        <label for="mats">Stream of Matriculation</label>
+                        <input type="text" name="mats" id="mats" class="read" readonly value="Not Applicable">
+                    </td>
+                    <td>
+                        <label for="per">Percentage</label>
+                        <input type="number" name="per" id="per" placeholder="% Percentage">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sen">Senior Secondaryr</label>
+                        <input type="text" name="sen" id="sen" class="read" readonly value="10th+2">
+                    </td>
+                    <td>
+                        <label for="sens">Stream of Senior Secondary</label>
+                        <select name="sens" id="sens">
+                            <option value="nm">Non Medical</option>
+                            <option value="art">Arts</option>
+                            <option value="medical">Medical</option>
+                            <option value="commerce">Commerce</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="pers">Percentage Senior Secondary</label>
+                        <input type="number" name="pers" id="pers" placeholder="% Percentage">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="gra" id="gra"><label for="gra">Graduation</label>
+                        <input type="text" name="gra1" id="gra1" value="Choose Course" readonly class="read">
+                    </td>
+                    <td>
+                        <label for="streamg">Stream of Graduation</label>
+                        <input type="text" name="streamg" id="streamg" class="read" readonly value="Choose Stream">
+                    </td>
+                    <td>
+                        <label for="perg">Precentage</label>
+                        <input type="number" name="perg" id="perg" placeholder="% Percentage">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="pgra" id="pgra"><label for="pgra">Post Graduation</label>
+                        <input type="text" name="pgra1" id="pgra1" value="Choose Course" readonly class="read">
+                    </td>
+                    <td>
+                        <label for="pstreamg">Stream of Post Graduation</label>
+                        <input type="text" name="pstreamg" id="pstreamg" class="read" readonly value="Choose Stream">
+                    </td>
+                    <td>
+                        <label for="pperg">Precentage</label>
+                        <input type="number" name="pperg" id="pperg" placeholder="% Percentage">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><span class="bold-text">Contact Details</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tel">Contact No.</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Contact No.">
+                    </td>
+                    <td>
+                        <label for="atel">Alternate Contact No.</label>
+                        <input type="tel" name="atel" id="atel" placeholder="Alternate Contact No.">
+                    </td>
+                    <td>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="City">
+                    </td>
+                    <td>
+                        <label for="state">State</label>
+                        <input type="text" name="state" id="state" placeholder="State">
+                    </td>
+                    <td>
+                        <label for="pin">Pin</label>
+                        <input type="number" name="pin" id="pin" placeholder="Pin">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="checkbox" name="agree" id="agree"><label for="agree">Agree to terms and
+                            condition</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="submit" value="submit" class="btn">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
